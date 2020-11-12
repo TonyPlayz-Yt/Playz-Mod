@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "playz_mod:items/playzsword2"
+  }
+}

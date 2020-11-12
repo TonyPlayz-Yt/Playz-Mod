@@ -1,0 +1,28 @@
+{
+  "_fv": 10,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "playzsword2",
+    "customModelName": "Normal",
+    "name": "Playz Sword",
+    "specialInfo": [
+      "This is the only sword that you'll ever need !"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:PlayzMod"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.0,
+    "enchantability": 200,
+    "damageVsEntity": 30.0,
+    "usageCount": 2000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}
