@@ -1,0 +1,112 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "PlayzMod",
+      "type": "tab",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "playz_mod"
+    },
+    {
+      "name": "PlayzAppleFoodEaten",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "playz_apple_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PlayzApplw",
+      "type": "food",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "playz_apple"
+    },
+    {
+      "name": "PlayzArmorHelmetTickEvent",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "playz_armor_helmet_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PlayzArmor",
+      "type": "armor",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "playz_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "Timmy",
+      "type": "mob",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "timmy"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.playz_mod.playz_armor_boots": "Playz Boots",
+      "item.playz_mod.playz_armor_helmet": "Playz Helmet",
+      "itemGroup.tabplayz_mod": "Playz Mod",
+      "item.playz_mod.playz_armor_leggings": "Playz Leggings",
+      "item.playz_mod.playz_armor_chestplate": "Playz Chestplate",
+      "item.playz_mod.timmy": "Timmy Spawn Egg",
+      "item.playz_mod.playz_apple": "Playz Apple",
+      "entity.playz_mod.timmy": "Timmy"
+    }
+  },
+  "workspaceSettings": {
+    "modid": "playz_mod",
+    "modName": "Playz Mod",
+    "version": "1.0.0",
+    "author": "tony, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.15.2",
+    "modElementsPackage": "net.mcreator.playzmod",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202000432115
+}

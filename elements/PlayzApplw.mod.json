@@ -1,0 +1,27 @@
+{
+  "_fv": 10,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "playzapple",
+    "customModelName": "Normal",
+    "name": "Playz Apple",
+    "specialInfo": [
+      "Gives you special buffs!"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:PlayzMod"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 46,
+    "saturation": 8.299999999999999,
+    "eatingSpeed": 20,
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": true,
+    "onEaten": {
+      "name": "PlayzAppleFoodEaten"
+    }
+  }
+}
