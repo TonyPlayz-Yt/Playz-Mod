@@ -4,10 +4,10 @@ package net.mcreator.playzmod.itemgroup;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 
+import net.mcreator.playzmod.item.PlayzApplwItem;
 import net.mcreator.playzmod.PlayzModModElements;
 
 @PlayzModModElements.ModElement.Tag
@@ -22,7 +22,7 @@ public class PlayzModItemGroup extends PlayzModModElements.ModElement {
 			@OnlyIn(Dist.CLIENT)
 			@Override
 			public ItemStack createIcon() {
-				return new ItemStack(Items.APPLE, (int) (1));
+				return new ItemStack(PlayzApplwItem.block, (int) (1));
 			}
 
 			@OnlyIn(Dist.CLIENT)
