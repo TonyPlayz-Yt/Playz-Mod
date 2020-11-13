@@ -2,10 +2,10 @@
   "_fv": 10,
   "_type": "mob",
   "definition": {
-    "mobName": "Timmy",
+    "mobName": "Playz Trader",
     "mobLabel": "",
     "mobModelName": "Biped",
-    "mobModelTexture": "45e70d5c863ddb2622aebb7265d48a8f.png",
+    "mobModelTexture": "shotgunraids.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,
     "modelHeight": 1.8,
@@ -13,11 +13,11 @@
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -13421569,
+      "value": -65536,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -65332,
+      "value": -10027162,
       "falpha": 0.0
     },
     "creativeTab": {
@@ -27,7 +27,7 @@
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": {
-      "value": "CUSTOM:PlayzSword"
+      "value": ""
     },
     "equipmentOffHand": {
       "value": ""
@@ -45,41 +45,41 @@
       "value": ""
     },
     "mobBehaviourType": "Mob",
-    "mobCreatureType": "UNDEAD",
-    "attackStrength": 16,
+    "mobCreatureType": "UNDEFINED",
+    "attackStrength": 3,
     "movementSpeed": 0.3,
-    "armorBaseValue": 2.0,
-    "trackingRange": 100,
-    "health": 200,
-    "xpAmount": 100,
+    "armorBaseValue": 0.0,
+    "trackingRange": 64,
+    "health": 10,
+    "xpAmount": 0,
     "waterMob": false,
     "flyingMob": false,
-    "guiBoundTo": "<NONE>",
-    "inventorySize": 9,
+    "guiBoundTo": "PlayzApplesWeaponsArmorTrading",
+    "inventorySize": 2,
     "inventoryStackSize": 64,
     "disableCollisions": false,
     "ridable": false,
     "canControlForward": false,
     "canControlStrafe": false,
     "immuneToFire": false,
-    "immuneToArrows": true,
-    "immuneToFallDamage": true,
-    "immuneToCactus": true,
-    "immuneToDrowning": true,
-    "immuneToLightning": true,
-    "immuneToPotions": true,
+    "immuneToArrows": false,
+    "immuneToFallDamage": false,
+    "immuneToCactus": false,
+    "immuneToDrowning": false,
+    "immuneToLightning": false,
+    "immuneToPotions": false,
     "immuneToPlayer": false,
     "mobDrop": {
-      "value": "CUSTOM:PlayzApplw"
+      "value": ""
     },
     "livingSound": {
       "value": ""
     },
     "hurtSound": {
-      "value": "entity.player.hurt"
+      "value": "entity.generic.hurt"
     },
     "deathSound": {
-      "value": "entity.player.death"
+      "value": "entity.generic.death"
     },
     "stepSound": {
       "value": ""
@@ -91,9 +91,12 @@
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
+    "onRightClickedOn": {
+      "name": "PlayzTraderRightClickedOnEntity"
+    },
     "hasAI": true,
-    "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "aiBase": "Villager",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field><next><block type=\"leap_at_target\"><field name=\"speed\">0.5</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],
@@ -102,7 +105,7 @@
       "value": ""
     },
     "rangedItemType": "Default item",
-    "spawnThisMob": false,
+    "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
     "spawningProbability": 20,
     "mobSpawningType": "monster",

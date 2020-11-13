@@ -16,8 +16,11 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
+import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.projectile.PotionEntity;
+import net.minecraft.entity.projectile.ArrowEntity;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
@@ -34,6 +37,8 @@ import net.minecraft.client.renderer.entity.layers.BipedArmorLayer;
 import net.minecraft.client.renderer.entity.BipedRenderer;
 
 import net.mcreator.playzmod.itemgroup.PlayzModItemGroup;
+import net.mcreator.playzmod.item.PlayzSwordItem;
+import net.mcreator.playzmod.item.PlayzApplwItem;
 import net.mcreator.playzmod.PlayzModModElements;
 
 @PlayzModModElements.ModElement.Tag
@@ -77,6 +82,7 @@ public class TimmyEntity extends PlayzModModElements.ModElement {
 			super(type, world);
 			experienceValue = 100;
 			setNoAI(false);
+			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(PlayzSwordItem.block, (int) (1)));
 		}
 
 		@Override
@@ -87,7 +93,7 @@ public class TimmyEntity extends PlayzModModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false));
+			this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, true));
 			this.goalSelector.addGoal(2, new RandomWalkingGoal(this, 1));
 			this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
 			this.goalSelector.addGoal(4, new LookRandomlyGoal(this));
@@ -101,6 +107,7 @@ public class TimmyEntity extends PlayzModModElements.ModElement {
 
 		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
 			super.dropSpecialItems(source, looting, recentlyHitIn);
+			this.entityDropItem(new ItemStack(PlayzApplwItem.block, (int) (1)));
 		}
 
 		@Override
@@ -115,7 +122,11 @@ public class TimmyEntity extends PlayzModModElements.ModElement {
 
 		@Override
 		public boolean attackEntityFrom(DamageSource source, float amount) {
+			if (source.getImmediateSource() instanceof ArrowEntity)
+				return false;
 			if (source.getImmediateSource() instanceof PotionEntity)
+				return false;
+			if (source == DamageSource.FALL)
 				return false;
 			if (source == DamageSource.CACTUS)
 				return false;
@@ -137,7 +148,7 @@ public class TimmyEntity extends PlayzModModElements.ModElement {
 				this.getAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(2);
 			if (this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE) == null)
 				this.getAttributes().registerAttribute(SharedMonsterAttributes.ATTACK_DAMAGE);
-			this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(18);
+			this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(16);
 		}
 	}
 }

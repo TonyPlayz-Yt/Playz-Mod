@@ -1,0 +1,51 @@
+{
+  "_fv": 10,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 352,
+    "height": 332,
+    "renderBgLayer": true,
+    "doesPauseGame": true,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "Items.EMERALD"
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 254,
+          "y": 113
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Playz Trader",
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "name": "Playz Trader",
+          "x": 363,
+          "y": 78
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 313,
+          "y": 113
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "group": "playz_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "playz_mod:playz_gem"
+    },
+    "1": {
+      "item": "playz_mod:playz_gem"
+    },
+    "2": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "playz_mod:playz_sword",
+    "count": 1
+  }
+}

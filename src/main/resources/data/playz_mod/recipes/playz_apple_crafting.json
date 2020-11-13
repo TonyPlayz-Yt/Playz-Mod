@@ -1,0 +1,42 @@
+{
+  "group": "playz_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "playz_mod:playz_gem"
+    },
+    "1": {
+      "item": "playz_mod:playz_gem"
+    },
+    "2": {
+      "item": "playz_mod:playz_gem"
+    },
+    "3": {
+      "item": "playz_mod:playz_gem"
+    },
+    "4": {
+      "item": "minecraft:enchanted_golden_apple"
+    },
+    "5": {
+      "item": "playz_mod:playz_gem"
+    },
+    "6": {
+      "item": "playz_mod:playz_gem"
+    },
+    "7": {
+      "item": "playz_mod:playz_gem"
+    },
+    "8": {
+      "item": "playz_mod:playz_gem"
+    }
+  },
+  "result": {
+    "item": "playz_mod:playz_apple",
+    "count": 1
+  }
+}

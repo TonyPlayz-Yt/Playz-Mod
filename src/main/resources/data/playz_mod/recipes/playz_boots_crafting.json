@@ -1,0 +1,26 @@
+{
+  "group": "playz_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "playz_mod:playz_gem"
+    },
+    "2": {
+      "item": "playz_mod:playz_gem"
+    },
+    "3": {
+      "item": "playz_mod:playz_gem"
+    },
+    "5": {
+      "item": "playz_mod:playz_gem"
+    }
+  },
+  "result": {
+    "item": "playz_mod:playz_armor_boots",
+    "count": 1
+  }
+}

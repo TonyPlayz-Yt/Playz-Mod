@@ -1,11 +1,14 @@
 {
   "item.playz_mod.playz_armor_boots": "Playz Boots",
-  "item.playz_mod.playz_armor_helmet": "Playz Helmet",
   "itemGroup.tabplayz_mod": "Playz Mod",
-  "item.playz_mod.playz_armor_leggings": "Playz Leggings",
+  "item.playz_mod.playz_trader": "Playz Trader Spawn Egg",
   "item.playz_mod.playz_armor_chestplate": "Playz Chestplate",
-  "item.playz_mod.timmy": "Timmy Spawn Egg",
   "item.playz_mod.playz_apple": "Playz Apple",
   "entity.playz_mod.timmy": "Timmy",
-  "item.playz_mod.playz_sword": "Playz Sword"
+  "item.playz_mod.playz_gem": "Playz Gem",
+  "item.playz_mod.playz_sword": "Playz Sword",
+  "item.playz_mod.playz_armor_helmet": "Playz Helmet",
+  "entity.playz_mod.playz_trader": "Playz Trader",
+  "item.playz_mod.playz_armor_leggings": "Playz Leggings",
+  "item.playz_mod.timmy": "Timmy Spawn Egg"
 }
