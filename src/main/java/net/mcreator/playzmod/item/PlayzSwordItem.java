@@ -38,7 +38,7 @@ public class PlayzSwordItem extends PlayzModModElements.ModElement {
 			}
 
 			public float getAttackDamage() {
-				return 28f;
+				return 44.1f;
 			}
 
 			public int getHarvestLevel() {
